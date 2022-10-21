@@ -79,6 +79,28 @@ We will do several steps for our preprocessing:
    <br>
     We use Robust Scaler because our data has outliers and Robust Scaler won't be affected by outliers. We can tune the scaler later to find the best scaler.
 
+## Benchmark Model
+
+<img src="https://github.com/cinfransisca/Predictive-Analysis-of-Hotel-Booking-Cancellations/blob/main/Images/benchmark%20model.jpg" alt="benchmark model" width="500"/>
+
+## Hyperparameter Tuning
+
+<img src="https://github.com/cinfransisca/Predictive-Analysis-of-Hotel-Booking-Cancellations/blob/dddd6c86448e286030a0fa8d2d95b9fe5733360d/Images/Hyperparameter%20tuning%20result.jpg" alt="tuning result" width="500"/>
+
+## Final Model
+
+We wil use the tuned Xgboost as our final model.
+
+<img src="https://github.com/cinfransisca/Predictive-Analysis-of-Hotel-Booking-Cancellations/blob/dddd6c86448e286030a0fa8d2d95b9fe5733360d/Images/classification%20report.jpg" alt="classification report" width="400"/>
+
+<img src="https://github.com/cinfransisca/Predictive-Analysis-of-Hotel-Booking-Cancellations/blob/dddd6c86448e286030a0fa8d2d95b9fe5733360d/Images/confusion-matrix.png" alt="confusion matrix" width="300"/>
+
+<img src="https://github.com/cinfransisca/Predictive-Analysis-of-Hotel-Booking-Cancellations/blob/dddd6c86448e286030a0fa8d2d95b9fe5733360d/Images/confusion-matrix-normalized.png" alt="confusion matrix normalized" width="300"/>
+
+## Feature Importances 
+
+<img src="https://github.com/cinfransisca/Predictive-Analysis-of-Hotel-Booking-Cancellations/blob/dddd6c86448e286030a0fa8d2d95b9fe5733360d/Images/feature-importance.png" alt="feature importances" width="500"/>
+
 ## Model Implementation
 
 Let's say there are 200 bookings for a hotel (100 canceled and 100 not canceled) and the hotel has 200 rooms. A room that is filled with customer can generate 125 USD for the hotel revenue. If a room is empty, it will cost the hotel 25 USD and if a room is overbooked, it will cost the hotel 100 USD for customer compensation. For this example, we will assume that the hotel can find substitute customers for every predicted canceled rooms.
